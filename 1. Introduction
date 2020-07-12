@@ -1,0 +1,27 @@
+Released in 1995, one of the most popular programming languages in decades.
+it is platform independent .
+platform is a combination of OS and architecture (windows+intel)
+
+compile a code and get into a executable code
+java converts code to java bytecode which is platform idependent and has JVM(Java virtual machine) on that machine. JVM is pre intstalled. programmer need not worry about computer
+specific things. java compilation is simple compared to c, cpp.
+
+Python follows this method. C# by Microsoft also uses this.
+
+3 billion devices, 9 million developers.
+
+c, cpp has mutiples ways to do a thing, in java there are clear rules( primitives and non primitives)
+c, cpp have operator overloading while java does not have that
+
+JVM works as a monetoring manager, and takes care of safety compared to c,cpp.
+
+we cannot access memory directly in java, only references.
+
+java is close to c,cpp and different from java.
+
+Java is Statically typed language
+has better exceptional handling, and garbage collection
+
+It is difficult to write bad code in java.
+
+handles issues at compilation, and code is maintainable easily that is why it is preferred by lot of developers.
