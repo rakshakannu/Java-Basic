@@ -1,0 +1,40 @@
+java programs are portable/ platform independent 
+java int size is fixed as compared to c,cpp
+
+to setup environment :
+
+1)install jdk
+
+JDK->
+1. JRE(java runtime environment)
+ --jvm(required software to convert to bytecode)
+ --java class libraries()
+2. Dev tools
+2)download IDE
+3)classpath
+
+// this is a comment
+/* muti
+line
+comment*/
+
+public class Test{
+  public static void main(String [] args)
+  {
+    System.out.print("Hello World"); 
+  }
+}
+
+// static dont need object to call thats why main is always static.
+// java has arguments as array of strings because we can pass strings at command line.
+// out is a object
+// print is a method
+
+running the code:
+~$ javac Test.java
+
+a new file will be generated which is the bytecode named Test
+
+~$ java Test
+
+JVM runs the Test(bytecode file)
