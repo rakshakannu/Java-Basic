@@ -1,0 +1,25 @@
+// non primitive data types are classes. these classes can be user defined classes or pre-defined library classes.
+ex - System is a predifined class in java
+
+// we create a new object of the class using new.
+// we  access the members of the class using dot operator.
+
+// primitive VS non-primitive
+
+non-primitives are references.
+primitive data types are not references.
+
+so, variables values changed will be affected in references whereas in primitive data types, it wont be.
+
+non- primitives are always stored in HEAP memory, where as primitives are stored in STACK memory.
+Stack memory is used for function calls.
+HEAP memory is generally used for dynamic memory allocation. we use the NEW operator to create memory for non-primitive types.
+
+if you wont initialise the members of non-primitive type, they get a default value.
+for integer its 0.
+boolean its false.
+floating its 0.0.
+but in primitive type, there is no default value and you will get compiler error.
+
+
+ 
