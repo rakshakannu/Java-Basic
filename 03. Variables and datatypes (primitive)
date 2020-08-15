@@ -1,0 +1,64 @@
+// in java we must specify the datatype before using it. this is not there in python.
+// c,cpp, and java are called statically typed languages
+// python is called dynamically typed language. in pyhton, it is decided during execution as to how much memory should be allocated. that is why java & cpp programs are 
+generally faster than python.
+
+// variable naming
+allows a-z, A-Z, _ , $ and numbers. the only rule is that the variable name should not start with numbers. also keywords cannot be used to name them.
+
+// convention in java
+to use camelcase.
+1. if single word, then all lowercase
+2. if they are more than one word in the varable, then the second word will start with a capital letter.
+ex - name, nameOfPlayer, ageOfPlayer, currentPlayer.
+3. if there is a constant, write it in uppercase, and if there are more than one word, seperate them using _ .
+ex - int MAX_AGE = 100;
+4. final keyword is used in java for declaring constants.
+In Java, the final keyword can be used while declaring an entity. Using the final keyword means that the value can't be modified in the future. This entity can be - but is not 
+limited to - a variable, a class or a method.
+ex - final int MAX_AGE = 100;
+
+// types of variables in java
+
+1. primitive (int , char, float, double)
+2. non - primitive (array, string, any user defined class)
+
+// primitive data types
+
+1. boolean
+true/ false
+
+2. byte
+a byte is stored using 8 bits. used to store small variables/ values.
+(-128 to 127) or (-2^7 to 2^7 - 1 )
+out of the 8 bits, one bit is used for sign (the leftmost bit).
+in java, negative numbers are stored using 2's compliment representation.
+
+3.  short
+this is 16 bit long.
+(-32768 to 32767) or (-2^15 to 2^15 -1)
+
+4. int
+it is 32 bit
+
+5. long
+it is 64 bit
+
+6. big integer (larger than long)
+
+7. float
+decimals 
+
+8. double
+decimals
+
+9. char
+in java, characters are stored using 16 bits.
+in c and cpp, characters are 8 bit.
+in java, the idea is to allow unicode characters.
+the range is (0 to 2^16-1)
+the characters are represented using single quotes.
+
+// literals
+ex - int x = 10;
+here 10 is a literal.
