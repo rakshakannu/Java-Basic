@@ -1,0 +1,84 @@
+// a wrapper class is a class whose object wraps or contains primitive data types. when we create an object to a wrapper class, it contains a field and in this field, we can store
+primitive data types. in other words we can wrap a primitive value into a wrapper class.
+
+// need of wrapper class
+
+1. They convert primitive data types into objects. Objects are needed if we wish to modify the arguments passed into a method (because primitive types are passed by value).
+2. The classes in java.util package handles only objects and hence wrapper classes help in this case also.
+3. Data structures in the Collection framework, such as ArrayList and Vector, store only objects (reference types) and not primitive types.
+4. An object is needed to support synchronization in multithreading.
+
+// primitive data type - Wrapper Class
+char - Character
+byte - Byte
+short - Short
+int - Integer
+long - Long
+float - Float
+double - Double
+boolean - Boolean
+
+// example of Autoboxing
+
+Autoboxing: automatic conversion of primitive datatypes into the object of their corresponding wrapper class.
+ex - conversation of int to Integer, long to Long, double to Double etc.
+
+class autoBoxing{
+  public static void main(String[] args){
+    char ch = 'a';
+    
+    //coverting primitive datatype into an object (autoboxing)
+    Character a = ch;
+    
+    ArrayList <Integer> arrayList = new ArrayList<Integer>();
+    arrayList.add(25);
+    
+    System.out.print(arrayList.get(0));
+  }
+}
+
+output - 25
+
+// example of unboxing
+
+unboxing - reverse of autoboxing.
+
+class unBoxong{
+  public static void main(String[] args){
+    charater ch = 'a';
+    
+    //unboxing
+    char a = ch;
+    
+    ArrayList <Integer> arrayList = new ArrayList<Integer>();
+    arrayList.add(25);
+    
+    int num = arrayList(0);
+    System.out.print(num);
+  }
+}
+
+output - 25
+
+// typecasting
+
+converting one datatype to another is called typecasting.
+ex -
+char ch = 'A';
+int num = (int)ch;
+
+// widening or automatic conversion 
+
+byte -> short -> int -> long -> float -> Double
+
+// narrow or explicit conversion
+
+Double -> Float -> Long -> Int -> Short -> Byte
+
+// example of typecasting
+
+char ch = 'c';
+int num = 70;
+
+num = ch; (correct)
+ch = num; (wrong) because num takes more bytes that ch, and becomes incomapatible.
