@@ -1,0 +1,22 @@
+// the four main classes that implement the list interface are
+
+1. arraylist
+2. linkedlist
+3. vector
+4. stack
+
+list interface inherits from the collections interface
+
+it has some additional methods that are not there in the list interface given below:
+
+get(int index) - to get index of a particular index
+set(int index, E element) - replace the element at that index
+indexOf(object O) - first index of the item that is there in the list. it will get the leftmost index of the item ( incase the item has repeated )
+listIterator() - can move in both the directions, not only forward
+listIterator(int index) - gives an iterator from the given position
+remove(int index) - remove an item at a particular position
+(collection interface remove function takes object as an arguement, and this one takes index as a arguement)
+
+//syntax
+
+List<Integer> list = new ArrayList<Integer>();
