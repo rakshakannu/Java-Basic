@@ -1,0 +1,183 @@
+// in java string is a sequence of character and Java uses 16 bits to store string values. it basically uses UTF-16 to store the values.
+
+// There are 4 ways to create Strings in Java
+
+1. character array/ Arraylist
+EX: char[] arr = { 'a','b','c' }
+
+2. String class
+EX: String str = "abc";
+// Strings created by string class are immutable, that is the content of the string cannot be changed.
+
+3. StringBuffer class
+EX: StringBuffer  str = StringBuffer("hello");
+// this class is safe to use in a multithreaded environment
+
+4. StringBuilder class
+EX: StringBuilder str = new StringBuilder("hello");
+// this is not thread safe
+// this is used to write a program in a single thread that requires mutable string
+
+// STring objects are immutable, hence thread safety is not required. They are automatically thread safe.
+
+EXAMPLE PROGRAM TO SHOW STRING OPERATIONS
+
+// Java program to demonstrate 
+// string class methods in Java
+
+class GFG { 
+    public static void main(String args[]) 
+    { 
+        // Creates a string literal
+         String str = "geeks";
+
+        // Returns the number of 
+        // characters in the String. 
+        System.out.println(str.length());
+        
+        // Returns the character at ith index. 
+        System.out.println(str.charAt(3)); //charAt() cannot be used in the left side because its immutable
+                           
+        // Return the substring from the 
+        // ith  index character 
+        // to end of string 
+        System.out.println(str.substring(2)); 
+  
+        // Returns the substring from i to j-1 index. 
+        System.out.println(str.substring(2,5)); 
+    } 
+} 
+
+
+// Java program to demonstrate 
+// indexOf() method of String in Java
+class GFG { 
+    public static void main(String args[]) 
+    {
+        // Creating two string literals
+        String s1 = "geeksforgeeks";
+        String s2 = "geeks";
+        
+        // Returns the first occurrence of
+        // s2 in s1 after index 1
+        System.out.println(s1.indexOf(s2));
+    } 
+} 
+
+
+// Java program to demonstrate 
+// compareTo() method of String in Java
+class GFG { 
+    public static void main(String args[]) 
+    {
+        // Creating two string literals
+        String s1 = "geeksforgeeks";
+        String s2 = "for";
+        
+        int res = s1.compareTo(s2);
+        
+        if(res == 0)
+            System.out.println("Same");
+        
+        if(res > 0)
+            System.out.println("s1 is Greater");
+            
+        if(res < 0)
+            System.out.println("s1 is Smaller");
+    } 
+} 
+// COMPARES TWO STRINGS LEXICOGRAPHICALLY
+
+
+// Java program to demonstrate 
+// equals() method of String in Java
+class GFG { 
+    public static void main(String args[]) 
+    {
+        // Creating two string literals
+        String s1 = "geeksforgeeks";
+        String s2 = "geeksforgeeks";
+        
+        // Whether s2 equal to s1
+        System.out.println(s1.equals(s2));
+    } 
+} 
+// CHECKS CHARACTER BY CHARACTER IF THEY ARE SAME OR NOT
+
+
+// Java program to demonstrate 
+// contains() method of String in Java
+class GFG { 
+    public static void main(String args[]) 
+    {
+        // Creating two string literals
+        String s1 = "geeksforgeeks";
+        String s2 = "geeks";
+        
+        // Whether s2 is present in s1 or not
+        // true
+        System.out.println(s1.contains(s2));
+        
+       
+    }
+} 
+
+
+// Java program to demonstrate 
+// string class methods in Java
+
+class Test { 
+    public static void main(String args[]) 
+    {
+        // Creating two string literals
+        String s1 = "geeks";
+        String s2 = "geeks";
+        
+        // Checking if both point to the
+        // same object or not
+        if(s1 == s2)
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+        
+        // Creating a string using 
+        // new operator
+        String s3 = new String("geeks");
+        
+        // Checking if both point to the
+        // same object or not
+        if(s1 == s3)
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+    } 
+} 
+// FUNFACT ABOUT JAVA COMPILER: THE COMPILER DOES NOT ALLOCATE NEW MEMORY FOR THE SAME TW0 STRINGS CONTENT BECAUSE IT IS IMMUTABLE. BUT IF YOU CREATE A NEW STRING THEN IT WILL
+BE DIFFERENT
+
+
+// Java program to demonstrate 
+// concat() method of String in Java
+class GFG { 
+    public static void main(String args[]) 
+    {
+        // Creating two string literals
+        String s1 = "geeks";
+        String s2 = s1;
+        
+        // Creates a new object "geeksforgeeks"
+        // Now s1 points to this new string
+        s1 = s1 + "forgeeks";
+        // or
+        // s1 = s1.concat("forgeeks");
+        
+        System.out.println(s1);
+        
+        // Since s2 is still pointing 
+        // to initial "geeks"
+        // and s1 is pointing to a new 
+        // object "geeksforgeeks"
+        System.out.println(s1 == s2); // FALSE IS OUTPUT
+    }
+}
+// WHEN WE CONCAT SOMETHING TO A STRING, IT CREATES A NEW OBJECT AND S1 REFERS TO THAT NEW OBJECT BECAUSE STRINGS ARE IMMUTABLE.
