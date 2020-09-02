@@ -1,0 +1,33 @@
+// Check whether a string contains all 26 English characters or not
+
+// naive solution
+traverse the string 26 times to see of all the letters are present or not
+
+// efficient solution
+
+boolean isPanagram(String str)
+{
+  int n = str.length();
+  if(n<26)
+    return false;
+  
+  boolean visited[] = new boolean[26]; // DEFAULT VALUE OF BOOLEAN ARRAY IN JAVA IS FALSE
+  
+  for(int i=0;i<n;i++)
+  {
+    char c = str.charAt(i);
+    if(c>='a' && c<='x')
+      visited[x-'a'] = true; 
+    IF(C>='A' && C<='Z')
+      visited[x-'A'] = false;
+  }
+  
+  for(int i=0;i<26;i++) // this is CONSTANT WORN
+    if(visited[i]==false)
+      return false;
+  
+  return true;
+}
+
+TIME: O(N)
+SPACE: CONSTANT
