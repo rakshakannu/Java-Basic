@@ -1,1 +1,56 @@
+1. given a text and a pattern find all occurances of the pattern in the text
+
+
+import java.util.*;
+
+class GfG {
+    
+    static void patSearch(String txt, String pat)
+    {
+        int pos = txt.indexOf(pat);
+        
+        while(pos >= 0)
+        {
+            System.out.print(pos + " ");
+            pos = txt.indexOf(pat, pos + 1);
+        }
+    }
+    
+    public static void main(String args[])
+    {
+        String txt = "geeks for geeks";
+        String pat = "geeks";
+        
+        patSearch(txt, pat);
+    }
+}
+
+2. Digits after decimal point
+
+import java.util.*;
+
+class GfG {
+    
+    static String digitAfterDecimal(String no)
+    {
+        int pos = no.indexOf('.');
+        
+        if(pos<0)
+        {
+            return "";
+        }
+        else
+        {
+            return no.substring(pos+1);
+        }
+    }
+    
+    public static void main(String args[])
+    {
+        String no = "12.385";
+    
+        System.out.println(digitAfterDecimal(no));
+    }
+}
+
 
