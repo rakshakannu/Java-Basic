@@ -1,0 +1,29 @@
+// both stringbuilder and stringbuffer have the same methods
+
+METHODS SAME AS STRING:
+
+length()
+charAt(index)
+indexOf(str) // String allows characters, but stringbuilder and stringbuffer allows only non characters 
+indexOf(str,fromIndex)
+lastIndexOf(str)
+LastIndexOf(str,fromIndex)
+compareTo(sb) // sb is an object
+substring(beginIndex)
+substring(beginIndex, endIndex)
+chars() gives a stream of integers
+
+METHODS PRESENT ONLY IN STRINGBUILDER AND STRINGBUFFER:
+
+append(x) - boolean, int, char, float, string, object
+insert(offset, x) - boolean, int, char, float, string, object
+setChatAt(index, c)
+reverse() - inplace reversing
+deletecharAt(index)
+delete(start, end) -  start is inclusive, end is exclusive
+capacity()
+replace(start, end, str) // not replace(char1, char2)
+
+
+
+
