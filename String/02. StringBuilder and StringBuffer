@@ -1,0 +1,15 @@
+Stringbuilder - mutable
+Stringbuffer - mutable and thread-safe
+String - immutable and threadsafe by default
+
+String s1 = "geeks"
+String s2 = s1;
+s1 = s1 + "forgeeks"
+
+STRING
+s1==s2 // false
+because strings are immutable
+
+STRINGBUILDER/ STRINGBUFFER
+s1==s2 // true 
+because the same object is modified and does not create a new memory like strings
