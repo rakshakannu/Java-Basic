@@ -23,7 +23,3 @@ deletecharAt(index)
 delete(start, end) -  start is inclusive, end is exclusive
 capacity()
 replace(start, end, str) // not replace(char1, char2)
-
-
-
-
