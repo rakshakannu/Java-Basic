@@ -1,0 +1,78 @@
+// works only for lists
+
+// inherits from Iterator and provides below additional functionalities ( in addition to next(), hasNext(), and remove() )
+hasPrevious()
+Previous()
+add()
+set() -  to change a value
+nextIndex()
+previousIndex()
+
+ListIterator is an enhanced version of iterator. normal iterator allows us to travel only in the forward direction, where as this can even go in reverse direction.
+
+ListIterator()
+ListIterator(int index) 0<=index<=n
+
+// EXAMPLE OF FORWARD TRAVERSAL USING LIST ITERATOR
+
+/*package whatever //do not write package name here */
+
+import java.io.*;
+import java.util.*;
+import java.util.function.*;
+import java.util.stream.*;
+
+class GFG {
+  
+	public static void main (String[] args) {
+	
+	    List<Integer> list = new ArrayList<Integer>();
+	    
+	    list.add(10);
+	    list.add(20);
+	    list.add(30);
+	    
+	    
+	    ListIterator<Integer> it = list.listIterator();
+	    
+	    while(it.hasNext())
+	    {
+	        System.out.println(it.next());
+	    }
+
+	}
+	
+}
+
+// BACKWARD TRAVERSAL
+
+/*package whatever //do not write package name here */
+
+import java.io.*;
+import java.util.*;
+import java.util.function.*;
+import java.util.stream.*;
+
+class GFG {
+  
+	public static void main (String[] args) {
+	
+	    List<Integer> list = new ArrayList<Integer>();
+	    
+	    list.add(10);
+	    list.add(20);
+	    list.add(30);
+	    
+	    
+	    ListIterator<Integer> it = list.listIterator(list.size());
+	    
+	    while(it.hasPrevious())
+	    {
+	        System.out.println(it.previous());
+	    }
+
+	}
+	
+}
+
+.... TO BE CONTINUED.
