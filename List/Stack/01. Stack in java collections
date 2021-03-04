@@ -1,0 +1,42 @@
+// stack can be implemented using ArrayDeque, and Stack classes
+
+collections->list->vector->stack
+collections->Deque->ArrayDeque
+
+ArrayDeque cab be used in a single threaded environment
+Vector is a thread safe class and a legacy class that was there before collections framework. in a single threaded environment, vector class might cause extra overhead.
+
+/*package whatever //do not write package name here */
+
+import java.io.*;
+import java.util.*;
+import java.util.function.*;
+import java.util.stream.*;
+
+class GFG {
+    
+	public static void main (String[] args) {
+	
+	    ArrayDeque<Integer> stack = new ArrayDeque<>();
+	    
+	    stack.push(10);
+	    stack.push(20);
+	    stack.push(30);
+	    
+	    System.out.println(stack.peek());
+	    System.out.println(stack.pop());
+	    System.out.println(stack.peek());
+	  
+	}
+	
+}
+
+.size()
+.isEmpty()
+
+all have time complexity O(1)
+Both vector and ArrayDeque are array implementations of stack.
+there are dynamic sized array implementations.
+
+Amortized time is the way to express the time complexity when an algorithm has the very bad time complexity only once in a while besides the 
+time complexity that happens most of time. (during resizing of the array)
